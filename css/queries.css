@@ -226,6 +226,41 @@
         padding: 0 20px;
     }
     
+    /* Hero/banner rules — responsive positioning so heads remain visible.
+       This file is loaded after styles.min.css, so these rules override the compiled CSS. */
+    .hero {
+        background-image: url("../img/hero-min.jpeg") !important;
+        background-repeat: no-repeat !important;
+        /* move image to top and increase height so full heads show */
+        background-position: center top !important;
+        background-size: cover !important;
+        min-height: 380px !important;
+        padding-top: 70px !important;
+    }
+
+    @media (min-width: 768px) {
+        .hero {
+            /* tablet */
+            min-height: 480px !important;
+            background-position: center top !important;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .hero {
+            /* desktop */
+            min-height: 560px !important;
+            background-position: center top !important;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .hero {
+            /* large desktop */
+            min-height: 340px !important;
+            background-position: center top !important;
+        }
+    }
     #gallery .img-wrap,
     #eng-pics .img-wrap {
         border-radius: 0;

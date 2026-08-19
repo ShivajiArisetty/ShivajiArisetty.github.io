@@ -318,13 +318,35 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 750px;
-  background: url('../img/hero-min.jpeg') center center;
+  /* base: slightly taller than before to reduce cropping */
+  min-height: 260px;
+  background-image: url('../img/hero-min.jpeg');
+  background-repeat: no-repeat;
+  background-position: center 12%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  padding-top: 70px;
+
+  /* Tablet and up: increase height and nudge image down so heads show */
+  @media (min-width: 768px) {
+    min-height: 320px;
+    background-position: center 18%;
+  }
+
+  /* Desktop: more height and slightly lower crop to include tops of heads */
+  @media (min-width: 992px) {
+    min-height: 360px;
+    background-position: center 24%;
+  }
+
+  /* Large desktop: largest banner height */
+  @media (min-width: 1200px) {
+    min-height: 420px;
+    background-position: center 30%;
+  }
 
   /*.rsvp-btn {
     position: absolute;
@@ -1374,4 +1396,4 @@ body.modal-open {
 
 .modal-body {
   padding: 25px;
-}
+}

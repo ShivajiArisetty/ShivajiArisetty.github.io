@@ -73,28 +73,29 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-    <section class="hero">
-        <section class="navigation">
-            <header>
-                <div class="header-content">
-                    <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
-                    <div class="header-nav">
-                        <nav>
-                            <ul class="primary-nav">
-                                <li><a href="#intro">Our Wedding</a></li>
-                                <li><a href="#events">Events</a></li>
-                                <li><a href="#contact">Need Help?</a></li>
-                                <li><a href="#gallery">Gallery</a></li>
-                                <li><a href="#map">Venues</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="navicon">
-                        <a class="nav-toggle" href="#"><span></span></a>
-                    </div>
+    <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="#intro">Our Wedding</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#contact">Need Help?</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#map">Venues</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </header>
-        </section>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section class="hero">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -280,66 +281,6 @@
             </div>
             <div class="row gallery-row">
                 <div class="col-md-2 col-sm-4 col-xs-6 gallery-item">
-                    <a class="fancybox" rel="group" href="img/gallery/gallery-1-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/gallery/gallery-1-sm.jpg" alt="Gallery Photo 1" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 gallery-item">
-                    <a class="fancybox" rel="group" href="img/gallery/gallery-2-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/gallery/gallery-2-sm.jpg" alt="Gallery Photo 2" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 gallery-item">
-                    <a class="fancybox" rel="group" href="img/gallery/gallery-3-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/gallery/gallery-3-sm.jpg" alt="Gallery Photo 3" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 gallery-item">
-                    <a class="fancybox" rel="group" href="img/gallery/gallery-4-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/gallery/gallery-4-sm.jpg" alt="Gallery Photo 4" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 gallery-item">
-                    <a class="fancybox" rel="group" href="img/gallery/gallery-5-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/gallery/gallery-5-sm.jpg" alt="Gallery Photo 5" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 gallery-item">
-                    <a class="fancybox" rel="group" href="img/gallery/gallery-6-lg.jpg">
-                        <div class="img-wrap">
-                            <div class="overlay">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <img src="img/gallery/gallery-6-sm.jpg" alt="Gallery Photo 6" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6 gallery-item">
                     <a class="fancybox" rel="group" href="img/gallery/gallery-7-lg.jpg">
                         <div class="img-wrap">
                             <div class="overlay">
@@ -503,6 +444,12 @@
         ga('create', 'UA-46465113-4', 'auto');
         ga('send', 'pageview');
     </script>
-</body>
+        </script>
+        <style>
+        /* Inline hero override to ensure live preview shows the updated framing */
+        .hero{background-image:url("img/hero-min.jpeg")!important;background-repeat:no-repeat!important;background-size:cover!important;background-position:center top!important;min-height:380px!important;padding-top:70px!important}
+        @media (min-width:768px){.hero{min-height:480px!important;background-position:center top!important}}@media (min-width:992px){.hero{min-height:560px!important;background-position:center top!important}}@media (min-width:1200px){.hero{min-height:640px!important;background-position:center top!important}}
+        </style>
+    </body>
 
-</html>
+    </html>
