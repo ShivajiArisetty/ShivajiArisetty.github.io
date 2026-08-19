@@ -293,8 +293,26 @@
 }
 
 @media screen and (max-width: 640px) {
+    /* center hero content vertically on small screens */
+    .hero {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+
     .hero .hero-content {
-        padding-top: 100%;
+        padding-top: 0 !important;
+        position: static !important;
+        top: auto !important;
+        transform: none !important;
+        width: 100%;
+        text-align: center;
     }
 
     #gallery .img-wrap i,
@@ -335,12 +353,30 @@
 }
 
 @media screen and (max-width: 480px) {
-    .hero .hero-content {
-        padding-top: 110%;
+    /* center hero content vertically on very small screens */
+    .hero {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
     }
-    
+
+    .hero .hero-content {
+        padding-top: 0 !important;
+        position: static !important;
+        top: auto !important;
+        transform: none !important;
+        text-align: center;
+    }
+
     .hero .hero-content img {
         width: 65%;
+        display: inline-block;
     }
 
     .hero .btn {
@@ -399,8 +435,25 @@
 }
 
 @media screen and (max-width: 320px) {
+    /* tiny screens: center hero content vertically */
+    .hero {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+
     .hero .hero-content {
-        padding-top: 130%;
+        padding-top: 0 !important;
+        position: static !important;
+        top: auto !important;
+        transform: none !important;
+        text-align: center;
     }
 
     .rsvp {
